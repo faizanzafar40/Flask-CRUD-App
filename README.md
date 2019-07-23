@@ -1,4 +1,4 @@
-# Basic Create, Read, Update, Delete (CRUD) Application in Flask
+# Basic Create, Read, Update, Delete (CRUD) Web App
 
 ## Brief Description
 
