@@ -1,0 +1,20 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# SQLite database (generated at runtime)
+*.db
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Distribution / build
+build/
+dist/
+*.egg-info/
