@@ -1,4 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD Web App</title>
+  </head>
   <body>
     <h1>Add book</h1>
     <form method="POST" action="/">
@@ -11,18 +17,18 @@
       {% for book in books %}
         <tr>
           <td>
-            {{book.title}}
+            {{ book.title }}
           </td>
           <td>
             <form method="POST" action="./update" style="display: inline">
-              <input type="hidden" value="{{book.title}}" name="old_title">
-              <input type="text" value="{{book.title}}" name="new_title">
+              <input type="hidden" value="{{ book.title }}" name="old_title">
+              <input type="text" value="{{ book.title }}" name="new_title">
               <input type="submit" value="Update">
             </form>
           </td>
           <td>
             <form method="POST" action="./delete" style="display: inline">
-              <input type="hidden" value="{{book.title}}" name="title">
+              <input type="hidden" value="{{ book.title }}" name="title">
               <input type="submit" value="Delete">
             </form>
           </td>
