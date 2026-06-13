@@ -42,6 +42,9 @@ def home():
             db.session.add(book)
             db.session.commit()
         except Exception as e:
+            # Roll back so the failed insert (e.g. a duplicate title) doesn't
+            # poison the session for the query that follows.
+            db.session.rollback()
             print("Failed to add book")
             print(e)
     books = Book.query.all()
