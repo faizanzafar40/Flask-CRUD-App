@@ -84,3 +84,7 @@ This was my first hands-on look at building a web app end to end: defining route
 Jinja template, and backing it all with a database through an ORM. It gave me a feel for the request
 cycle and for how SQLAlchemy models map to tables — a foundation I can reuse for larger Flask
 projects.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
